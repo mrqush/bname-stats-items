@@ -1,0 +1,136 @@
+.bname-stats-items {
+    background: #f8f8f8;
+    padding: 0 20px 20px;
+    font: 14px Roboto;
+    padding-top: 15px;
+    &__activity {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__from {
+        width: 192px;
+        vertical-align: middle;
+        color: #999;
+        font-size: 14px;
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 15px;
+        }
+    }
+    &__text {
+        color: #999;
+        font-size: 14px;
+        padding-bottom: 3px;
+    }
+    &__input {
+        border: 1px solid #ccc;
+        border-top: 1px solid #9a9a9a;
+        height: 30px;
+        box-sizing: border-box;
+        padding: 0 0 0 10px;
+        vertical-align: middle;
+        color: #333;
+        cursor: pointer;
+        position: relative;
+        font: 14px Roboto;
+        background: #fff url(https://www.consumercomplaints.in/fw/calendar.png)
+            97% 6px no-repeat;
+    }
+    &__to {
+        vertical-align: middle;
+        color: #999;
+        font-size: 14px;
+    }
+    &__filter {
+        margin-top: 20px;
+        display: flex;
+        padding-left: 33px;
+        line-height: 27px;
+    }
+    &__select {
+        font: 14px Roboto;
+        margin-left: 20px;
+        border: 1px solid #ccc;
+        border-top: 1px solid #9a9a9a;
+        height: 30px;
+        box-sizing: border-box;
+        padding: 0 0 0 10px;
+        vertical-align: middle;
+        color: #333;
+        cursor: pointer;
+        position: relative;
+    }
+    &__top {
+        display: flex;
+        color: #999;
+        margin-top: 20px;
+        min-width: 320px;
+        &_title {
+            width: 61%;
+            border: 1px solid #d5d7d8;
+            border-top-left-radius: 3px;
+            background: linear-gradient(180deg, white, #f9f8f8);
+            padding: 10px;
+        }
+        &_type {
+            min-width: 100px;
+            border: 1px solid #d5d7d8;
+            border-left: none;
+            background: linear-gradient(180deg, white, #f9f8f8);
+            padding: 10px;
+            @media screen and (max-width: 1024px) {
+                min-width: 80px;
+            }
+        }
+        &_date {
+            min-width: 100px;
+            border: 1px solid #d5d7d8;
+            border-top-right-radius: 3px;
+            border-left: none;
+            background: linear-gradient(180deg, white, #f9f8f8);
+            padding: 10px;
+            @media screen and (max-width: 1024px) {
+                min-width: 80px;
+            }
+        }
+    }
+    &__item {
+        color: #999;
+        padding: 10px;
+        &_title {
+            width: 61%;
+            color: #105cb6;
+            text-decoration: none;
+            border: 1px solid #d5d7d8;
+            border-right: none;
+            border-top: none;
+        }
+        &_type {
+            min-width: 100px;
+            border-bottom: 1px solid #d5d7d8;
+            @media screen and (max-width: 1024px) {
+                min-width: 80px;
+            }
+        }
+        &_date {
+            min-width: 100px;
+            border: 1px solid #d5d7d8;
+            border-top: none;
+            border-left: none;
+            @media screen and (max-width: 1024px) {
+                min-width: 80px;
+            }
+        }
+    }
+    &__details {
+        display: flex;
+    }
+    &__circle {
+        width: 10px;
+        height: 10px;
+        box-sizing: border-box;
+        display: inline-block;
+        margin-right: 5px;
+        border-radius: 5px;
+        background: #c56161;
+    }
+}

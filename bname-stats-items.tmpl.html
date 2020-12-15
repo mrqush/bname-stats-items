@@ -1,0 +1,213 @@
+<style>
+    .bname-stats-items {
+  background: #f8f8f8;
+  padding: 0 20px 20px;
+  font: 14px Roboto;
+  padding-top: 15px;
+}
+.bname-stats-items__activity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.bname-stats-items__from {
+  width: 192px;
+  vertical-align: middle;
+  color: #999;
+  font-size: 14px;
+}
+@media screen and (max-width: 1024px) {
+  .bname-stats-items__from {
+    margin-bottom: 15px;
+  }
+}
+.bname-stats-items__text {
+  color: #999;
+  font-size: 14px;
+  padding-bottom: 3px;
+}
+.bname-stats-items__input {
+  border: 1px solid #ccc;
+  border-top: 1px solid #9a9a9a;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 0 0 10px;
+  vertical-align: middle;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+  font: 14px Roboto;
+  background: #fff url(https://www.consumercomplaints.in/fw/calendar.png) 97% 6px no-repeat;
+}
+.bname-stats-items__to {
+  vertical-align: middle;
+  color: #999;
+  font-size: 14px;
+}
+.bname-stats-items__filter {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 33px;
+  line-height: 27px;
+}
+.bname-stats-items__select {
+  font: 14px Roboto;
+  margin-left: 20px;
+  border: 1px solid #ccc;
+  border-top: 1px solid #9a9a9a;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 0 0 10px;
+  vertical-align: middle;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+}
+.bname-stats-items__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #999;
+  margin-top: 20px;
+  min-width: 320px;
+}
+.bname-stats-items__top_title {
+  width: 61%;
+  border: 1px solid #d5d7d8;
+  border-top-left-radius: 3px;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f9f8f8));
+  background: linear-gradient(180deg, white, #f9f8f8);
+  padding: 10px;
+}
+.bname-stats-items__top_type {
+  min-width: 100px;
+  border: 1px solid #d5d7d8;
+  border-left: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f9f8f8));
+  background: linear-gradient(180deg, white, #f9f8f8);
+  padding: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .bname-stats-items__top_type {
+    min-width: 80px;
+  }
+}
+.bname-stats-items__top_date {
+  min-width: 100px;
+  border: 1px solid #d5d7d8;
+  border-top-right-radius: 3px;
+  border-left: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f9f8f8));
+  background: linear-gradient(180deg, white, #f9f8f8);
+  padding: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .bname-stats-items__top_date {
+    min-width: 80px;
+  }
+}
+.bname-stats-items__item {
+  color: #999;
+  padding: 10px;
+}
+.bname-stats-items__item_title {
+  width: 61%;
+  color: #105cb6;
+  text-decoration: none;
+  border: 1px solid #d5d7d8;
+  border-right: none;
+  border-top: none;
+}
+.bname-stats-items__item_type {
+  min-width: 100px;
+  border-bottom: 1px solid #d5d7d8;
+}
+@media screen and (max-width: 1024px) {
+  .bname-stats-items__item_type {
+    min-width: 80px;
+  }
+}
+.bname-stats-items__item_date {
+  min-width: 100px;
+  border: 1px solid #d5d7d8;
+  border-top: none;
+  border-left: none;
+}
+@media screen and (max-width: 1024px) {
+  .bname-stats-items__item_date {
+    min-width: 80px;
+  }
+}
+.bname-stats-items__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.bname-stats-items__circle {
+  width: 10px;
+  height: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 5px;
+  background: #c56161;
+}
+</style>
+<div class="bname-stats-items">
+    <form class="bname-stats-items__activity">
+        <div class="bname-stats-items__from">
+            <div class="bname-stats-items__text">
+                From
+            </div>
+            <input class="bname-stats-items__input" type="text" value="2019-12-17">
+        </div>
+        <div class="bname-stats-items__to">
+            <div class="bname-stats-items__text">
+                To
+            </div>
+            <input class="bname-stats-items__input" type="text" value="2020-12-16">
+        </div>
+        <div class="bname-stats-items__filter">
+            <div class="bname-stats-items__text">
+                Filter by
+            </div>
+            <select class="bname-stats-items__select">
+                <option>All</option>
+                <option value="complaints">Complaints</option>
+                <option value="resolved">Resolved Complaints</option>
+                <option value="comments">Comments</option>
+            </select>
+        </div>
+    </form>
+    <div class="bname-stats-items__top">
+        <div class="bname-stats-items__top_title">
+            Complaint title (771)
+        </div>
+        <div class="bname-stats-items__top_type">
+            Type
+        </div>
+        <div class="bname-stats-items__top_date">
+            Date
+        </div>
+    </div>
+    <div>
+        <div class="bname-stats-items__details">
+            <a href="#" class="bname-stats-items__item bname-stats-items__item_title">
+                Refund not received
+            </a>
+            <div class="bname-stats-items__item bname-stats-items__item_type">
+                <span class="bname-stats-items__circle"></span> Complaint
+            </div>
+            <div class="bname-stats-items__item bname-stats-items__item_date">
+                Dec 15, 2020
+            </div>
+        </div>
+    </div>
+</div>
