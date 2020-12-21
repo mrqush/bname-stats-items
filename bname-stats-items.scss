@@ -129,6 +129,14 @@
         display: inline-block;
         margin-right: 5px;
         border-radius: 5px;
-        background: #c56161;
+        &_complaint {
+            background: #c56161;
+        }
+        &_comment {
+            background: #378faf;
+        }
+        &_resolved {
+            background: #64af37;
+        }
     }
 }

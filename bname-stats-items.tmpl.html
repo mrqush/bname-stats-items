@@ -1,5 +1,5 @@
 <style>
-    .bname-stats-items {
+.bname-stats-items {
   background: #f8f8f8;
   padding: 0 20px 20px;
   font: 14px Roboto;
@@ -40,7 +40,6 @@
   cursor: pointer;
   position: relative;
   font: 14px Roboto;
-  background: #fff url(https://www.consumercomplaints.in/fw/calendar.png) 97% 6px no-repeat;
 }
 .bname-stats-items__to {
   vertical-align: middle;
@@ -157,7 +156,15 @@
   display: inline-block;
   margin-right: 5px;
   border-radius: 5px;
+}
+.bname-stats-items__circle_complaint {
   background: #c56161;
+}
+.bname-stats-items__circle_comment {
+  background: #378faf;
+}
+.bname-stats-items__circle_resolved {
+  background: #64af37;
 }
 </style>
 <div class="bname-stats-items">
@@ -203,7 +210,7 @@
                 Refund not received
             </a>
             <div class="bname-stats-items__item bname-stats-items__item_type">
-                <span class="bname-stats-items__circle"></span>
+                <span class="bname-stats-items__circle bname-stats-items__circle_complaint"></span>
                  Complaint
             </div>
             <div class="bname-stats-items__item bname-stats-items__item_date">

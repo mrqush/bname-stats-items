@@ -155,5 +155,13 @@
   display: inline-block;
   margin-right: 5px;
   border-radius: 5px;
+}
+.bname-stats-items__circle_complaint {
   background: #c56161;
+}
+.bname-stats-items__circle_comment {
+  background: #378faf;
+}
+.bname-stats-items__circle_resolved {
+  background: #64af37;
 }
