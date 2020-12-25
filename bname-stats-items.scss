@@ -5,21 +5,28 @@
     padding-top: 15px;
     &__activity {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        @media screen and (max-width: 660px) {
+            flex-direction: column;
+        }
     }
     &__from {
-        width: 192px;
         vertical-align: middle;
         color: #999;
         font-size: 14px;
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 660px) {
             margin-bottom: 15px;
+            display: flex;
         }
     }
     &__text {
         color: #999;
         font-size: 14px;
         padding-bottom: 3px;
+        min-width: 70px;
+        @media screen and (max-width: 660px) {
+            line-height: 27px;
+        }
     }
     &__input {
         border: 1px solid #ccc;
@@ -37,16 +44,17 @@
         vertical-align: middle;
         color: #999;
         font-size: 14px;
+        @media screen and (max-width: 660px) {
+            display: flex;
+        }
     }
     &__filter {
         margin-top: 20px;
         display: flex;
-        padding-left: 33px;
         line-height: 27px;
     }
     &__select {
         font: 14px Roboto;
-        margin-left: 20px;
         border: 1px solid #ccc;
         border-top: 1px solid #9a9a9a;
         height: 30px;
@@ -75,9 +83,6 @@
             border-left: none;
             background: linear-gradient(180deg, white, #f9f8f8);
             padding: 10px;
-            @media screen and (max-width: 1024px) {
-                min-width: 80px;
-            }
         }
         &_date {
             min-width: 100px;
@@ -86,9 +91,6 @@
             border-left: none;
             background: linear-gradient(180deg, white, #f9f8f8);
             padding: 10px;
-            @media screen and (max-width: 1024px) {
-                min-width: 80px;
-            }
         }
     }
     &__item {
@@ -105,18 +107,12 @@
         &_type {
             min-width: 100px;
             border-bottom: 1px solid #d5d7d8;
-            @media screen and (max-width: 1024px) {
-                min-width: 80px;
-            }
         }
         &_date {
             min-width: 100px;
             border: 1px solid #d5d7d8;
             border-top: none;
             border-left: none;
-            @media screen and (max-width: 1024px) {
-                min-width: 80px;
-            }
         }
     }
     &__details {

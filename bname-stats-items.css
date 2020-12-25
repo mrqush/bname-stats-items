@@ -1,4 +1,3 @@
-<style>
 .bname-stats-items {
   background: #f8f8f8;
   padding: 0 20px 20px;
@@ -9,24 +8,41 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 660px) {
+  .bname-stats-items__activity {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .bname-stats-items__from {
-  width: 192px;
   vertical-align: middle;
   color: #999;
   font-size: 14px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 660px) {
   .bname-stats-items__from {
     margin-bottom: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 .bname-stats-items__text {
   color: #999;
   font-size: 14px;
   padding-bottom: 3px;
+  min-width: 70px;
+}
+@media screen and (max-width: 660px) {
+  .bname-stats-items__text {
+    line-height: 27px;
+  }
 }
 .bname-stats-items__input {
   border: 1px solid #ccc;
@@ -46,17 +62,22 @@
   color: #999;
   font-size: 14px;
 }
+@media screen and (max-width: 660px) {
+  .bname-stats-items__to {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .bname-stats-items__filter {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 33px;
   line-height: 27px;
 }
 .bname-stats-items__select {
   font: 14px Roboto;
-  margin-left: 20px;
   border: 1px solid #ccc;
   border-top: 1px solid #9a9a9a;
   height: 30px;
@@ -92,11 +113,6 @@
   background: linear-gradient(180deg, white, #f9f8f8);
   padding: 10px;
 }
-@media screen and (max-width: 1024px) {
-  .bname-stats-items__top_type {
-    min-width: 80px;
-  }
-}
 .bname-stats-items__top_date {
   min-width: 100px;
   border: 1px solid #d5d7d8;
@@ -105,11 +121,6 @@
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f9f8f8));
   background: linear-gradient(180deg, white, #f9f8f8);
   padding: 10px;
-}
-@media screen and (max-width: 1024px) {
-  .bname-stats-items__top_date {
-    min-width: 80px;
-  }
 }
 .bname-stats-items__item {
   color: #999;
@@ -127,21 +138,11 @@
   min-width: 100px;
   border-bottom: 1px solid #d5d7d8;
 }
-@media screen and (max-width: 1024px) {
-  .bname-stats-items__item_type {
-    min-width: 80px;
-  }
-}
 .bname-stats-items__item_date {
   min-width: 100px;
   border: 1px solid #d5d7d8;
   border-top: none;
   border-left: none;
-}
-@media screen and (max-width: 1024px) {
-  .bname-stats-items__item_date {
-    min-width: 80px;
-  }
 }
 .bname-stats-items__details {
   display: -webkit-box;
@@ -166,56 +167,3 @@
 .bname-stats-items__circle_resolved {
   background: #64af37;
 }
-</style>
-<div class="bname-stats-items">
-    <form class="bname-stats-items__activity">
-        <div class="bname-stats-items__from">
-            <div class="bname-stats-items__text">
-                From
-            </div>
-            <input class="bname-stats-items__input" type="date">
-        </div>
-        <div class="bname-stats-items__to">
-            <div class="bname-stats-items__text">
-                To
-            </div>
-            <input class="bname-stats-items__input" type="date">
-        </div>
-        <div class="bname-stats-items__filter">
-            <div class="bname-stats-items__text">
-                Filter by
-            </div>
-            <select class="bname-stats-items__select">
-                <option>All</option>
-                <option value="complaints">Complaints</option>
-                <option value="resolved">Resolved Complaints</option>
-                <option value="comments">Comments</option>
-            </select>
-        </div>
-    </form>
-    <div class="bname-stats-items__top">
-        <div class="bname-stats-items__top_title">
-            Complaint title (771)
-        </div>
-        <div class="bname-stats-items__top_type">
-            Type
-        </div>
-        <div class="bname-stats-items__top_date">
-            Date
-        </div>
-    </div>
-    <div>
-        <div class="bname-stats-items__details">
-            <a href="#" class="bname-stats-items__item bname-stats-items__item_title">
-                Refund not received
-            </a>
-            <div class="bname-stats-items__item bname-stats-items__item_type">
-                <span class="bname-stats-items__circle bname-stats-items__circle_complaint"></span>
-                 Complaint
-            </div>
-            <div class="bname-stats-items__item bname-stats-items__item_date">
-                Dec 15, 2020
-            </div>
-        </div>
-    </div>
-</div>
